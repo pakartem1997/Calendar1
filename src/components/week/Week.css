@@ -1,0 +1,65 @@
+.week__container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 40px;
+   width: 80%;
+   counter-reset: section -1;
+}
+
+.week__day {
+   display: block;
+   text-align: center;
+   height: 40px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   display: flex;
+   align-items: center;
+   padding-left: 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.week__item {
+   display: flex;
+   width: 100%;
+   /* background-color: cornflowerblue; */
+   justify-content: center;
+   flex-direction: column;
+   position: relative;
+}
+
+.week__item:first-child>.week__time::before {
+   content: "";
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   position: absolute;
+   opacity: 0.5;
+   counter-increment: section;
+   /* Инкрементирует счётчик*/
+   content: counter(section) ":00";
+   top: 21px;
+   left: -40px;
+}
+
+.week__item:not(:last-child) {
+   border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.week__time {
+   height: 30px;
+   width: 100%;
+   position: relative;
+   /* background-color: darkkhaki; */
+}
+
+.week__time:not(:last-child) {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* .week__time-item{
+   height: 30px;
+   width: 100%;
+   background-color: darkseagreen;
+} */

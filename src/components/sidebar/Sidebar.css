@@ -1,0 +1,58 @@
+.sidebar-container {
+   background-color: aqua;
+   width: 150px;
+   height: 100vh;
+}
+
+.month__name__s {
+   display: none;
+}
+
+.month__inner__s {
+   width: 70%;
+}
+
+.header__s {
+   display: flex;
+   height: 30px;
+   align-items: center;
+   justify-content: center;
+   margin-top: 34px;
+   margin-bottom: 10px;
+}
+
+.header__s-l,
+.header__s-r {
+   width: 18px;
+   height: 18px;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.header__s-l {
+   background-image: url(../../image/arrow-left.svg);
+}
+
+.header__s-r {
+   background-image: url(../../image/arrow-rigth.svg);
+}
+
+.header__centre__s {
+   margin: 0 5px;
+}
+
+.button__s {
+   width: 200px;
+   height: 80px;
+   border-radius: 50px;
+   margin: 0 auto;
+   margin-top: 34px;
+   cursor: pointer;
+   background-color: #B8D6D8;
+   font-weight: 400;
+   font-size: 25px;
+   line-height: 30px;
+}
